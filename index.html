@@ -6,11 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Date Countdown</title>
+    <!-- Compressed CSS -->
+    <!-- Compiled and minified CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-        <h1>Date Countdown</h1>
+
+    <div class="row">
+        <form class="col s12">
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="event-name" type="text" class="validate">
+                    <label for="event-name">Event Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="event-date" type="date" class="validate">
+                    <label for="event-date">Event Date</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="event-time" type="time" class="validate">
+                    <label for="event-time">Event Time</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/javascript/moment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="./assets/javascript/app.js"></script>
 </body>
 
