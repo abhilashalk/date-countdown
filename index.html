@@ -1,55 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Date Countdown</title>
-    <!-- Compressed CSS -->
-    <!-- Compiled and minified CSS -->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Countdown</title>
 </head>
 
-<body>
-    <div class="row">
-        <div class="col s12">
-            
+<body id="home" class="scrollspy">
+    <!-- navbar-fixed -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#home" class="brand-logo">Date Countdown</a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#search">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="side-nav" id="mobile-nav">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#search">Search</a>
+        </li>
+    </ul>
+    <!-- navbar-fixed end -->
+    <!-- Section: Slider -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/resort1.jpg" alt="">
+                <div class="caption center-align">
+                    <h2>Take Your Dream Vacation</h2>
+                    <blockquote class="light grey-text text-lighten-3
+ hide-on-small-only" cite="https://www.brainyquote.com/quotes/zig_ziglar_617844">Time well spent results in more money to spend, more money to save, and more time to vacation.
+                        <footer>Zig Ziglar</footer>
+                    </blockquote>
+                </div>
+            </li>
+            <li>
+                <img src="img/resort2.jpg" alt="">
+                <div class="caption left-align">
+                    <h2>Time is elusive</h2>
+                    <blockquote class="light grey-text text-lighten-3 hide-on-small-only" cite="https://www.brainyquote.com/quotes/john_buchan_335740?src=t_elusive">The charm of fishing is that it is the pursuit of what is elusive but attainable, a perpetual series
+                        of occasions for hope.
+                        <footer>John Buchan</footer>
+                    </blockquote>
+                </div>
+            </li>
+            <li>
+                <img src="img/resort3.jpg" alt="">
+                <div class="caption right-align">
+                    <h2>Give us the date, We will let you know how soon</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non illo earum cumque id est!</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Section: Slider end -->
+    <!-- Section: form-input -->
+    <section id="form-input" class="section section-form scrollspy">
+        <div class="container">
+            <div class="row">
+
+                <div class="col s12 m12">
+                    <div class="card-panel grey lighten-3">
+                        <h5>Please fill out your event title and date</h5>
+                        <div class="input-field">
+                            <input type="text" placeholder="Name of the event" id="title">
+                            <label for="title">Event Title</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="datepicker" id="userDate">
+                            <label for="userDate">Event Date</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" class="timepicker" id="time">
+                            <label for="time">Event Time</label>
+                        </div>
+                        <!-- SELECT (Must be initialized) -->
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled selected>Event Category</option>
+                                <option value="1">Event</option>
+                                <option value="2">Birthday</option>
+                                <option value="3">Life</option>
+                                <option value="4">Study</option>
+                                <option value="5">Work</option>
+                                <option value="6">Entertainment</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <form class="col s12">
+    </section>
+    <!-- Section: form-input end -->
+    <!-- Section: Search -->
+    <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <h4 class="center">
+                    <span class="teal-white">Time Until Your Event</span>
+                    <span id="event"></span>
+                </h4>
+                <div class="col s12 m12">
+                    <div class="card">
+                        <!-- <div class="card-image">
+                <img src="img/resort1.jpg" alt="">
+                <span class="card-title">Cancun, Mexico</span>
+              </div> -->
+                        <div class="card-content black-text" id="countdown">
+                            <p>00:00:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Section: Search end -->
+    <!-- Footer -->
+    <footer class="section teal darken-2 white-text center">
+        <p class="flow-text">Countdown &copy; 2018</p>
+    </footer>
+    <!-- Footer end -->
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="event-name" type="text" class="validate">
-                    <label for="event-name">Event Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="event-date" type="date" class="validate">
-                    <label for="event-date">Event Date</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="event-time" type="time" class="validate">
-                    <label for="event-time">Event Time</label>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <script src="./assets/javascript/moment.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="./assets/javascript/app.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/materialize.min.js"></script>
+    <script src="./assets/javascript/app.js">
+    </script>
 </body>
 
 </html>
