@@ -123,5 +123,9 @@ $(document).ready(function() {
     var deadLineMilliseconds = new Date(deadLine).getTime();
 
     initTimer(deadLineMilliseconds, $display);
+   
+    $('.reset').on('click', function(){
+      window.location.reload ();
+    })
   });
 });
