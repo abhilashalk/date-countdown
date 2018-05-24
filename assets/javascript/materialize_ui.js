@@ -2,7 +2,7 @@ $(function () {
   $.validate({
     modules : 'date'
   });
-  
+
   /* Materialize functionality code  */
   // Init Side nav
   $('.button-collapse').sideNav();
@@ -20,7 +20,7 @@ $(function () {
   $('.datepicker').pickadate({
     disable: [{
       from: [2009, 5, 1],
-      to: [dateNow],
+      to: [dateNow -1],
     }, ],
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 25, // Creates a dropdown of 15 years to control year,
