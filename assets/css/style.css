@@ -5,3 +5,54 @@
 .icon-block .material-icons {
     font-size: inherit;
 }
+
+#countdown div {
+    display: inline-block;
+    line-height: 1;
+    padding: 20px;
+    font-size: 40px;
+    background: rgba(40, 50, 61, .62);
+}
+
+.center span {
+    display: inline;
+}
+
+#countdown {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 100;
+}
+
+#countdown span {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+#days {
+    font-size: 100px;
+    color: #ffffff;
+}
+
+#days {
+    font-size: 100px;
+    color: #ffffff;
+}
+
+#hours {
+    font-size: 100px;
+    color: #ffffff;
+}
+
+#minutes {
+    font-size: 100px;
+    color: #ffffff;
+}
+
+#seconds {
+    font-size: 50px;
+    color: #db4844;
+}
+.reset {
+    margin-top: 20px;
+}
