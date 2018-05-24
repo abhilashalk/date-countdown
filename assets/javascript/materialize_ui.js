@@ -20,7 +20,7 @@ $(function () {
   $('.datepicker').pickadate({
     disable: [{
       from: [2009, 5, 1],
-      to: [dateNow -1],
+      to: [dateNow],
     }, ],
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 25, // Creates a dropdown of 15 years to control year,

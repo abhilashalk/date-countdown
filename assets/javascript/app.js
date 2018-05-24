@@ -2,16 +2,12 @@ $(document)
   .ready(function () {
     var clock;
 
-    function displayClock($display, years, days, hours, minutes, seconds, duration, clock) {
+    function displayClock($display, years, months, days, hours, minutes, seconds, duration, clock) {
       // Display the result in the element with id="demo" Display the result in the
-      // element with id="#countdown"
-
-      if (years > 0) {
-        $('#years').html(('0' + years).slice(-2) + '<span>Year(s)</span>');
-      } else {
-        $('#years').hide();
-      }
-
+      // element with id="#countdown" if (years > 0) {   $('#years').html(('0' +
+      // years).slice(-2) + '<span>Year(s)</span>'); } else {   $('#years').hide(); }
+      $('#years').html(('0' + years).slice(-2) + '<span>Year(s)</span>');
+      $('#months').html(('0' + months).slice(-2) + '<span>Months</span>');
       $('#days').html(('0' + days).slice(-2) + '<span>Days</span>');
       $('#hours').html(('0' + hours).slice(-2) + '<span>Hours</span>');
       $('#minutes').html(('0' + minutes).slice(-2) + '<span>Minutes</span>');
@@ -40,6 +36,8 @@ $(document)
         // Time calculations for years days, hours, minutes and seconds
         var years = duration.get('years');
 
+        var months = duration.get('months');
+
         var days = duration.get('days');
 
         var hours = duration.get('hours');
@@ -48,7 +46,7 @@ $(document)
 
         var seconds = duration.get('seconds');
 
-        displayClock($display, years, days, hours, minutes, seconds, duration, clock);
+        displayClock($display, years, months, days, hours, minutes, seconds, duration, clock);
       }, 1000);
     }
 
