@@ -6,6 +6,10 @@
     font-size: inherit;
 }
 
+/* .brand-logo {
+    text-align: center;
+} */
+
 #countdown div {
     display: inline-block;
     line-height: 1;
