@@ -19,8 +19,8 @@
         <nav class="teal">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#home" class="brand-logo">Date Countdown</a>
-                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                    <a href="#home" class="brand-logo">ZERO HOUR</a>
+                    <a href="#event" data-activates="mobile-nav" class="button-collapse">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
@@ -28,7 +28,7 @@
                             <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#search">Search</a>
+                            <a href="#event">Event</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
             <a href="#home">Home</a>
         </li>
         <li>
-            <a href="#search">Search</a>
+            <a href="#event">Event</a>
         </li>
     </ul>
     <!-- navbar-fixed end -->
@@ -82,11 +82,11 @@
 
                 <div class="col s12 m12">
                     <div class="card-panel grey lighten-3">
-                        <h5>Please fill out your event title and date</h5>
+                        <h5>Please fill out your future event title and date</h5>
                         <form id="form-input">
                             <div class="input-field">
                                 <i class="material-icons prefix">event</i>
-                                <input type="text" placeholder="Name of the event" id="title">
+                                <input type="text" id="title" class="autocomplete">
                                 <label class="active" for="title">Event Title</label>
                             </div>
                             <div class="input-field">
@@ -100,18 +100,7 @@
                                 <input type="text" class="timepicker" id="time">
                                 <label class="active" for="time">Event Time</label>
                             </div>
-                            <!-- SELECT (Must be initialized) -->
-                            <!--<div class="input-field">-->
-                            <!--<select>-->
-                            <!--<option value="" disabled selected>Event Category</option>-->
-                            <!--<option value="1">Event</option>-->
-                            <!--<option value="2">Birthday</option>-->
-                            <!--<option value="3">Life</option>-->
-                            <!--<option value="4">Study</option>-->
-                            <!--<option value="5">Work</option>-->
-                            <!--<option value="6">Entertainment</option>-->
-                            <!--</select>-->
-                            <!--</div>-->
+                            <a href="#event"></a>
                             <input type="submit" value="Submit" class="btn">
                         </form>
                     </div>
@@ -121,11 +110,11 @@
     </section>
     <!-- Section: form-input end -->
     <!-- Section: Search -->
-    <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+    <section id="result" class="section section-result teal darken-1 white-text center scrollspy">
         <div class="container">
             <div class="row">
-                <h4 class="center">
-                    <span class="teal-white">Time Until Your:</span>
+                <h4 class="center message">
+                    <span class="teal-white"></span>
                     <span id="event"></span>
                 </h4>
                 <div class="col s12 m12">
@@ -137,6 +126,7 @@
                         <div id="minutes"></div>
                         <div id="seconds"></div>
                     </div>
+                    <h4 id="future-date"></h4>
                 </div>
                 <div class="row">
                     <div class="col s12 center-align reset">
@@ -150,7 +140,7 @@
     <!-- Section: Search end -->
     <!-- Footer -->
     <footer class="section teal darken-2 white-text center">
-        <p class="flow-text">Countdown &copy; 2018</p>
+        <p class="flow-text">ZERO HOUR &copy; 2018</p>
     </footer>
     <!-- Footer end -->
 
