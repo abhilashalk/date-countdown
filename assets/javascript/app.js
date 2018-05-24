@@ -13,13 +13,8 @@ $(document)
       $('#minutes').html(('0' + minutes).slice(-2) + '<span>Minutes</span>');
       $('#seconds').html(('0' + seconds).slice(-2) + '<span>Seconds</span>');
       if (duration <= 0) {
-        clearInterval(x);
-        $('#countdown').html('<h4>Countdown Expired</h4>');
-      }
-      if (duration < 0) {
-        //avoid collision
         clearInterval(clock);
-        $display.html('<h4>Countdown Expired</h4>');
+        $('#countdown').html('<h4>Countdown Expired</h4>');
       }
     }
 
