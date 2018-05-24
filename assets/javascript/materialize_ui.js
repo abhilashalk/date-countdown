@@ -1,27 +1,16 @@
 $(function () {
-  $.validate({
-    modules : 'date'
-  });
+  $.validate({modules: 'date'});
 
   /* Materialize functionality code  */
   // Init Side nav
   $('.button-collapse').sideNav();
 
   // Init Slider
-  $('.slider').slider({
-    indicators: false,
-    height: 600,
-    transition: 500,
-    interval: 6000,
-  });
+  $('.slider').slider({indicators: false, height: 600, transition: 500, interval: 6000});
 
   // Date Picker
   var dateNow = new Date();
   $('.datepicker').pickadate({
-    disable: [{
-      from: [2009, 5, 1],
-      to: [dateNow],
-    }, ],
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 25, // Creates a dropdown of 15 years to control year,
     today: 'Today',
@@ -48,6 +37,21 @@ $(function () {
 
   // Init Scrollspy
   $('.scrollspy').scrollSpy();
+
+  // Auto Complete
+  $('input.autocomplete').autocomplete({
+    data: {
+      "Easter": null,
+      "Valentine's Day": null,
+      "Wedding": null,
+      "Birthday": null,
+      "Election": null,
+      "Tax Day": null,
+      "Retirement": null,
+      "Party": null,
+      "Promotion": null,
+    }
+  });
 
   /* end of materialize code */
 })

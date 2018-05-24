@@ -9,17 +9,20 @@ nav .brand-logo {
 .icon-block .material-icons {
     font-size: inherit;
 }
+
 /* .brand-logo {
     text-align: center;
 } */
+
 /*  */
 
 #countdown div {
     display: inline-block;
     line-height: 1;
-    padding: 20px;
-    font-size: 40px;
+    padding: 1.25rem;
+    font-size: 2.5rem;
     background: rgba(40, 50, 61, .62);
+    margin: 0.3125rem 0 0.3125rem 0;
 }
 
 .center span {
@@ -33,40 +36,40 @@ nav .brand-logo {
 
 #countdown span {
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
 }
 
 #years {
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #ffffff;
 }
 
 #months {
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #ffffff;
 }
 
 #days {
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #ffffff;
 }
 
 #hours {
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #ffffff;
 }
 
 #minutes {
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #ffffff;
 }
 
 #seconds {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #db4844;
 }
 
 .reset {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
